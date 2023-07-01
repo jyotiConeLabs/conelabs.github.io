@@ -90,7 +90,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down"></span>Building Inspections made ... Automatic</h2>
+            <h2 data-aos="fade-down"></span>Automated Building Inspections</h2>
             <p data-aos="fade-up">ConeLabs Streamlines and Automates your Building Inspection Workflows with the Latest and Greatest Deep Learning Models</p>
             <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
           </div>
@@ -135,8 +135,10 @@
           </div>
 
           <div class="col-lg-5" data-aos="fade">
-            <form action="forms/quote.php" method="post" class="php-email-form">
-              <h3>Contact Us</h3>
+
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xpzgabed" method="post">
+              <fieldset id="fs-frm-inputs">
+                <h3>Contact Us</h3>
               <p>Reach out to us and find out how we can revolutionize your workflows. We are a small team and are more than willing to customize our solutions for your needs.</p>
               <div class="row gy-3">
 
@@ -148,24 +150,163 @@
                   <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
 
-                <div class="col-md-12">
+                <!-- <div class="col-md-12">
                   <input type="text" class="form-control" name="phone" placeholder="Phone" required>
-                </div>
+                </div> -->
 
                 <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              </fieldset>
+              <input type="submit" value="Submit">
+            </form><style>/* reset */
+            #fs-frm input,
+            #fs-frm select,
+            #fs-frm textarea,
+            #fs-frm fieldset,
+            #fs-frm optgroup,
+            #fs-frm label,
+            #fs-frm #card-element:disabled {
+              font-family: inherit;
+              font-size: 100%;
+              color: inherit;
+              border: none;
+              border-radius: 0;
+              display: block;
+              width: 100%;
+              padding: 0;
+              margin: 0;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+            }
+            #fs-frm label,
+            #fs-frm legend,
+            #fs-frm ::placeholder {
+              font-size: .825rem;
+              margin-bottom: .5rem;
+              padding-top: .2rem;
+              display: flex;
+              align-items: baseline;
+            }
+            
+            /* border, padding, margin, width */
+            #fs-frm input,
+            #fs-frm select,
+            #fs-frm textarea,
+            #fs-frm #card-element {
+              border: 1px solid rgba(0,0,0,0.2);
+              background-color: rgba(255,255,255,0.9);
+              padding: .75em 1rem;
+              margin-bottom: 1.5rem;
+            }
+            #fs-frm input:focus,
+            #fs-frm select:focus,
+            #fs-frm textarea:focus {
+              background-color: white;
+              outline-style: solid;
+              outline-width: thin;
+              outline-color: gray;
+              outline-offset: -1px;
+            }
+            #fs-frm [type="text"],
+            #fs-frm [type="email"] {
+              width: 100%;
+            }
+            #fs-frm [type="button"],
+            #fs-frm [type="submit"],
+            #fs-frm [type="reset"] {
+              width: auto;
+              cursor: pointer;
+              -webkit-appearance: button;
+              -moz-appearance: button;
+              appearance: button;
+            }
+            #fs-frm [type="button"]:focus,
+            #fs-frm [type="submit"]:focus,
+            #fs-frm [type="reset"]:focus {
+              outline: none;
+            }
+            #fs-frm [type="submit"],
+            #fs-frm [type="reset"] {
+              margin-bottom: 0;
+            }
+            #fs-frm select {
+              text-transform: none;
+            }
+            
+            #fs-frm [type="checkbox"] {
+              -webkit-appearance: checkbox;
+              -moz-appearance: checkbox;
+              appearance: checkbox;
+              display: inline-block;
+              width: auto;
+              margin: 0 .5em 0 0 !important;
+            }
+            
+            #fs-frm [type="radio"] {
+              -webkit-appearance: radio;
+              -moz-appearance: radio;
+              appearance: radio;
+            }
+            
+            /* address, locale */
+            #fs-frm fieldset.locale input[name="city"],
+            #fs-frm fieldset.locale select[name="state"],
+            #fs-frm fieldset.locale input[name="postal-code"] {
+              display: inline;
+            }
+            #fs-frm fieldset.locale input[name="city"] {
+              width: 52%;
+            }
+            #fs-frm fieldset.locale select[name="state"],
+            #fs-frm fieldset.locale input[name="postal-code"] {
+              width: 20%;
+            }
+            #fs-frm fieldset.locale input[name="city"],
+            #fs-frm fieldset.locale select[name="state"] {
+              margin-right: 3%;
+            }
+            </style>
+
+
+
+
+
+            <!-- <form action="https://formspree.io/f/xpzgabed"
+            method="POST"
+            enctype="multipart/form-data">
+              <h3>Contact Us</h3>
+              <p>Reach out to us and find out how we can revolutionize your workflows. We are a small team and are more than willing to customize our solutions for your needs.</p>
+              <div class="row gy-3">
+
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required>
+                </div>
+
+                <div class="col-md-12 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div> -->
+
+                <!-- <div class="col-md-12">
+                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                </div> -->
+
+                <!-- <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">A pigeon has been dispatched with your message to us. We will get back to you as soon as possible </div>
+                  <div class="sent-message">A pigeon has been dispatched with your message to us. We will get back to you as soon as possible. </div>
 
                   <button type="submit">SUBMIT</button>
                 </div>
 
               </div>
-            </form>
+            </form> -->
           </div><!-- End Quote Form -->
 
         </div>
